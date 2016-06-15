@@ -21,7 +21,9 @@
 	<scm-url>https://github.com/luisalbertogh/sdlcworkbench.git</scm-url>
 	<maven-repo-snapshots-url>http://localhost:9081/repository/maven-snapshots/</maven-repo-snapshots-url>
 	<maven-repo-releases-url>http://localhost:9081/repository/maven-releases/</maven-repo-releases-url>
-	<maven.release.plugin.version>2.5</maven.release.plugin.version>
+	<maven.release.plugin.version>2.5.3</maven.release.plugin.version>
+	<!-- Github credentials -->
+	<project.scm.id>github</project.scm.id>
   </properties>
   
   <!-- SCM details -->
@@ -48,14 +50,27 @@
   
   <build>
     <plugins>
+      <!-- Compiler plugin -->
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.3</version>
         <configuration>
-          <source/>
-          <target/>
+          <source />
+          <target />
         </configuration>
       </plugin>
+      <!-- Release plugin -->
+      <plugin>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-release-plugin</artifactId>
+	    <version>${maven.release.plugin.version}</version>
+	    <configuration>
+	      <!--
+	        During release:perform, enable the "release" profile
+	       -->
+	      <releaseProfiles>release</releaseProfiles>
+	    </configuration>
+	  </plugin>
     </plugins>
   </build>
 </project>
