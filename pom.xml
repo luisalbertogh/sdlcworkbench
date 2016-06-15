@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <!-- Artifact coordinates -->
+  <groupId>net.luisalbertogh.sdlc</groupId>
+  <packaging>pom</packaging>
+  <artifactId>SDLCWorkbench</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SDLCWorkbench</name>
+  <description>POC SDLC Workbench</description>
+  
+  <!-- Modules -->
+  <modules>
+	<module>Submodule01</module>
+	<module>Submodule02</module>
+  </modules>
+  
+  <!-- Properties 
+  <properties>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<scm-url>https://luis.garcia%40db.com@stash.gto.intranet.db.com:8081/scm/gbsv/sdlcworkbench.git</scm-url> -->
+	<!-- <maven-repo-snapshots-url>http://gmrepo.gslb.db.com:8481/nexus-webapp/content/repositories/gbsvsnapshots/</maven-repo-snapshots-url>
+	<maven-repo-releases-url>http://gmrepo.gslb.db.com:8481/nexus-webapp/content/repositories/gbsvreleases/</maven-repo-releases-url> -->
+	<!-- <maven.release.plugin.version>2.5</maven.release.plugin.version>
+  </properties> -->
+  
+  <!-- SCM details
+  <scm>
+	<connection>scm:git:${scm-url}</connection>
+    <developerConnection>scm:git:${scm-url}</developerConnection>
+    <url>${scm-url}</url>
+	<tag>HEAD</tag>
+  </scm> -->
+  
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <source/>
+          <target/>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
