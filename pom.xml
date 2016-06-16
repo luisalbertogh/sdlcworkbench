@@ -5,7 +5,7 @@
   <groupId>net.luisalbertogh.sdlc</groupId>
   <packaging>pom</packaging>
   <artifactId>SDLCWorkbench</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.2</version>
   <name>SDLCWorkbench</name>
   <description>POC SDLC Workbench</description>
   
@@ -33,7 +33,7 @@
 	<connection>scm:git:${scm-url}</connection>
     <developerConnection>scm:git:${scm-url}</developerConnection>
     <url>${scm-url}</url>
-	<tag>HEAD</tag>
+	<tag>SDLCWorkbench-0.0.2</tag>
   </scm>
   
   <!-- Deployment distribution -->
