@@ -22,6 +22,8 @@
 	<maven-repo-snapshots-url>http://localhost:9081/repository/maven-snapshots/</maven-repo-snapshots-url>
 	<maven-repo-releases-url>http://localhost:9081/repository/maven-releases/</maven-repo-releases-url>
 	<maven.release.plugin.version>2.5.3</maven.release.plugin.version>
+	<maven.versions.plugin.version>2.2</maven.versions.plugin.version>
+	<maven.scm.plugin.version>1.9.4</maven.scm.plugin.version>
 	<!-- Github credentials -->
 	<project.scm.id>github</project.scm.id>
   </properties>
@@ -59,18 +61,29 @@
           <target />
         </configuration>
       </plugin>
-      <!-- Release plugin -->
+      <!-- Release plugin
       <plugin>
 	    <groupId>org.apache.maven.plugins</groupId>
 	    <artifactId>maven-release-plugin</artifactId>
 	    <version>${maven.release.plugin.version}</version>
 	    <configuration>
-	      <!--
-	        During release:perform, enable the "release" profile
-	       -->
 	      <releaseProfiles>release</releaseProfiles>
 	    </configuration>
-	  </plugin>
+	  </plugin> -->
+	  <!-- Versions plugin -->
+	  <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>versions-maven-plugin</artifactId>
+           <version>${maven.versions.plugin.version}</version>
+       </plugin>
+       <!-- SCM plugin -->
+       <plugin>
+           <artifactId>maven-scm-plugin</artifactId>
+           <version>${maven.scm.plugin.version}</version>
+           <configuration>
+               <tag>${project.artifactId}-${project.version}</tag>
+           </configuration>
+       </plugin>
     </plugins>
   </build>
 </project>
