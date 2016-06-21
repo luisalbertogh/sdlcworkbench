@@ -17,13 +17,19 @@
   
   <!-- Properties -->
   <properties>
+	<!-- Project properties -->
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<scm-url>https://github.com/luisalbertogh/sdlcworkbench.git</scm-url>
 	<maven-repo-snapshots-url>http://localhost:9081/repository/maven-snapshots/</maven-repo-snapshots-url>
 	<maven-repo-releases-url>http://localhost:9081/repository/maven-releases/</maven-repo-releases-url>
+	
+	<!-- Plugin versions -->
 	<maven.release.plugin.version>2.5.3</maven.release.plugin.version>
 	<maven.versions.plugin.version>2.2</maven.versions.plugin.version>
 	<maven.scm.plugin.version>1.9.4</maven.scm.plugin.version>
+	<maven.scm.plugin.version>1.9.4</maven.scm.plugin.version>
+	<maven.mm.release.plugin.version>2.0.3</maven.mm.release.plugin.version>
+	
 	<!-- Github credentials -->
 	<project.scm.id>github</project.scm.id>
   </properties>
@@ -52,6 +58,7 @@
   
   <build>
     <plugins>
+      
       <!-- Compiler plugin -->
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -61,6 +68,7 @@
           <target />
         </configuration>
       </plugin>
+      
       <!-- Release plugin -->
       <plugin>
 	    <groupId>org.apache.maven.plugins</groupId>
@@ -70,12 +78,14 @@
 	      <releaseProfiles>release</releaseProfiles>
 	    </configuration>
 	  </plugin>
+	  
 	  <!-- Versions plugin -->
 	  <plugin>
            <groupId>org.codehaus.mojo</groupId>
            <artifactId>versions-maven-plugin</artifactId>
            <version>${maven.versions.plugin.version}</version>
        </plugin>
+       
        <!-- SCM plugin -->
        <plugin>
            <artifactId>maven-scm-plugin</artifactId>
@@ -84,6 +94,19 @@
                <tag>${project.artifactId}-${project.version}</tag>
            </configuration>
        </plugin>
+       
+       <!-- Multimodule Maven release plugin -->
+       <plugin>
+            <groupId>com.github.danielflower.mavenplugins</groupId>
+            <artifactId>multi-module-maven-release-plugin</artifactId>
+            <version>${maven.mm.release.plugin.version}</version>
+            <configuration>
+                <releaseGoals>
+                    <releaseGoal>deploy</releaseGoal>
+                </releaseGoals>
+            </configuration>
+        </plugin>
+        
     </plugins>
   </build>
 </project>
