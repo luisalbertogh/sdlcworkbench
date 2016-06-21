@@ -33,7 +33,7 @@
 	<connection>scm:git:${scm-url}</connection>
     <developerConnection>scm:git:${scm-url}</developerConnection>
     <url>${scm-url}</url>
-	<tag>HEAD</tag>
+	<tag>SDLCWorkbench-1.0</tag>
   </scm>
   
   <!-- Deployment distribution -->
