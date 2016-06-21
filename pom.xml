@@ -97,15 +97,10 @@
        
        <!-- Multimodule Maven release plugin -->
        <plugin>
-            <groupId>com.github.danielflower.mavenplugins</groupId>
-            <artifactId>multi-module-maven-release-plugin</artifactId>
-            <version>${maven.mm.release.plugin.version}</version>
-            <configuration>
-                <releaseGoals>
-                    <releaseGoal>deploy</releaseGoal>
-                </releaseGoals>
-            </configuration>
-        </plugin>
+           <groupId>com.github.danielflower.mavenplugins</groupId>
+           <artifactId>multi-module-maven-release-plugin</artifactId>
+           <version>${maven.mm.release.plugin.version}</version>
+       </plugin>
         
     </plugins>
   </build>
