@@ -5,13 +5,13 @@
   <parent>
 	<groupId>net.luisalbertogh.sdlc</groupId>
 	<artifactId>SDLCWorkbench</artifactId> 	
-	<version>0.0.7</version>
+	<version>0.0.8-SNAPSHOT</version>
   </parent>
   
   <!-- Artifact coordinates -->
   <groupId>net.luisalbertogh.sdlc</groupId>
   <artifactId>Submodule02</artifactId>
-  <version>0.0.7</version>
+  <version>0.0.8-SNAPSHOT</version>
   <name>Submodule02</name>
   <description>Component 02</description>
   
