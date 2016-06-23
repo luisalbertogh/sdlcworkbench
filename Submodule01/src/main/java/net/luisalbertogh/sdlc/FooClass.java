@@ -16,5 +16,15 @@ public final class FooClass {
 		System.out.println("I am calling from Submodule 01 - FO");
 		System.exit(0);
 	}
+	
+	/**
+	 * Sum two ints.
+	 * @param a - An int
+	 * @param b - Another int
+	 * @return The sum
+	 */
+	public int sum(int a, int b){
+		return a + b;
+	}
 
 }
