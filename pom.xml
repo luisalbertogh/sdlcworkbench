@@ -34,7 +34,7 @@
 	
 	<!-- Sonar properties -->
 	<sonar.language>java</sonar.language>
-	<sonar.jacoco.itReportPath>${project.basedir}/../target/jacoco-it.exec</sonar.jacoco.itReportPath>
+	<sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
 	
 	<!-- Github credentials -->
 	<project.scm.id>github</project.scm.id>
@@ -135,16 +135,16 @@
         <version>${maven.sonar.plugin.version}</version>
 	  </plugin>
        
-       <!-- JaCoCo plugin -->
+       <!-- JaCoCo plugin
       <plugin>
       	<groupId>org.jacoco</groupId>
       	<artifactId>jacoco-maven-plugin</artifactId>
       	<version>${maven.jacoco.plugin.version}</version>
       	<configuration>
-        	<destFile>${sonar.jacoco.itReportPath}</destFile>
+        	<destFile>${sonar.jacoco.reportPath}</destFile>
         	<append>true</append>
     	</configuration>
-      </plugin>
+      </plugin> -->
        
        <!-- Multimodule Maven release plugin
        <plugin>
