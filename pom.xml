@@ -5,7 +5,7 @@
   <groupId>net.luisalbertogh.sdlc</groupId>
   <packaging>pom</packaging>
   <artifactId>SDLCWorkbench</artifactId>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.0</version>
   <name>SDLCWorkbench</name>
   <description>POC SDLC Workbench</description>
   
