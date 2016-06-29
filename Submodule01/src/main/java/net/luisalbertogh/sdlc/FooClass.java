@@ -26,5 +26,15 @@ public final class FooClass {
 	public int sum(int a, int b){
 		return a + b;
 	}
+	
+	/**
+	 * Substract two ints.
+	 * @param a - An int
+	 * @param b - Another int
+	 * @return The sum
+	 */
+	public int diff(int a, int b){
+		return a - b;
+	}
 
 }
