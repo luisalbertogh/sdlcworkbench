@@ -5,7 +5,7 @@
   <parent>
 	<groupId>net.luisalbertogh.sdlc</groupId>
 	<artifactId>SDLCWorkbench</artifactId> 	
-	<version>1.0</version>
+	<version>1.1</version>
   </parent>
   
   <!-- Artifact coordinates -->
@@ -14,5 +14,25 @@
   <version>0.1.2-SNAPSHOT</version>
   <name>Submodule02</name>
   <description>Component 02</description>
+  
+  <!-- Properties -->
+  <properties>
+	<!-- Project properties -->
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<scm-url>https://github.com/luisalbertogh/sdlcworkbench.git</scm-url>
+	<maven-repo-snapshots-url>http://localhost:9081/repository/maven-snapshots/</maven-repo-snapshots-url>
+	<maven-repo-releases-url>http://localhost:9081/repository/maven-releases/</maven-repo-releases-url>
+	
+	<!-- Github credentials -->
+	<project.scm.id>github</project.scm.id>
+  </properties>
+  
+  <!-- SCM details -->
+  <scm>
+	<connection>scm:git:${scm-url}</connection>
+    <developerConnection>scm:git:${scm-url}</developerConnection>
+    <url>${scm-url}</url>
+	<tag>HEAD</tag>
+  </scm>
   
 </project>
