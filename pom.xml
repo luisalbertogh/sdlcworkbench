@@ -126,6 +126,7 @@
                <tag>${project.artifactId}-${project.version}</tag>
                <connectionType>connection</connectionType>
                <pushChanges>true</pushChanges>
+               <scmVersion>develop-2.0</scmVersion>
                <scmVersionType>branch</scmVersionType>
            </configuration>
        </plugin>
