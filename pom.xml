@@ -107,6 +107,9 @@
 	    <version>${maven.release.plugin.version}</version>
 	    <configuration>
 	      <releaseProfiles>release</releaseProfiles>
+	      <!-- Changes to POM will be pushed later by SCM plugin -->
+	      <pushChanges>false</pushChanges>
+	      <localCheckout>true</localCheckout>
 	    </configuration>
 	  </plugin>
 	  
@@ -126,7 +129,6 @@
                <tag>${project.artifactId}-${project.version}</tag>
                <connectionType>connection</connectionType>
                <pushChanges>true</pushChanges>
-               <scmVersion>develop-2.0</scmVersion>
                <scmVersionType>branch</scmVersionType>
            </configuration>
        </plugin>
