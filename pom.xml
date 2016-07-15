@@ -107,9 +107,9 @@
 	    <version>${maven.release.plugin.version}</version>
 	    <configuration>
 	      <releaseProfiles>release</releaseProfiles>
-	      <!-- Changes to POM will be pushed later by SCM plugin
+	      <!-- Changes to POM will be pushed later by SCM plugin -->
 	      <pushChanges>false</pushChanges>
-	      <localCheckout>true</localCheckout> -->
+	      <!-- <localCheckout>true</localCheckout> -->
 	    </configuration>
 	  </plugin>
 	  
