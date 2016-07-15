@@ -11,7 +11,7 @@
   <!-- Artifact coordinates -->
   <groupId>net.luisalbertogh.sdlc</groupId>
   <artifactId>Submodule01</artifactId>
-  <version>0.1.2-SNAPSHOT</version>
+  <version>0.1.3-SNAPSHOT</version>
   <name>Submodule01</name>
   <description>Component 01</description>
   
