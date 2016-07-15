@@ -27,7 +27,6 @@
 	<maven.release.plugin.version>2.5.3</maven.release.plugin.version>
 	<maven.versions.plugin.version>2.2</maven.versions.plugin.version>
 	<maven.scm.plugin.version>1.9.4</maven.scm.plugin.version>
-	<maven.scm.plugin.version>1.9.4</maven.scm.plugin.version>
 	<maven.mm.release.plugin.version>2.0.3</maven.mm.release.plugin.version>
 	<maven.sonar.plugin.version>3.0.1</maven.sonar.plugin.version>
 	<maven.jacoco.plugin.version>0.7.7.201606060606</maven.jacoco.plugin.version>
@@ -125,6 +124,9 @@
            <configuration>
            	   <server>${project.scm.id}</server>
                <tag>${project.artifactId}-${project.version}</tag>
+               <connectionType>connection</connectionType>
+               <pushChanges>true</pushChanges>
+               <scmVersionType>branch</scmVersionType>
            </configuration>
        </plugin>
        
@@ -145,14 +147,7 @@
         	<append>true</append>
     	</configuration>
       </plugin>
-       
-       <!-- Multimodule Maven release plugin
-       <plugin>
-           <groupId>com.github.danielflower.mavenplugins</groupId>
-           <artifactId>multi-module-maven-release-plugin</artifactId>
-           <version>${maven.mm.release.plugin.version}</version>
-       </plugin> -->
-        
+               
     </plugins>
   </build>
 </project>
