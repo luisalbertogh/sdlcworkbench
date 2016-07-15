@@ -11,7 +11,7 @@
   <!-- Artifact coordinates -->
   <groupId>net.luisalbertogh.sdlc</groupId>
   <artifactId>Submodule01</artifactId>
-  <version>0.1.4-SNAPSHOT</version>
+  <version>0.1.4</version>
   <name>Submodule01</name>
   <description>Component 01</description>
   
@@ -32,7 +32,7 @@
 	<connection>scm:git:${scm-url}</connection>
     <developerConnection>scm:git:${scm-url}</developerConnection>
     <url>${scm-url}</url>
-	<tag>HEAD</tag>
+	<tag>Submodule01-0.1.4</tag>
   </scm>
   
 </project>
