@@ -11,7 +11,7 @@
   <!-- Artifact coordinates -->
   <groupId>net.luisalbertogh.sdlc</groupId>
   <artifactId>Submodule01</artifactId>
-  <version>0.1.16</version>
+  <version>0.1.17</version>
   <name>Submodule01</name>
   <description>Component 01</description>
   
@@ -19,8 +19,8 @@
   <properties>
 	<!-- Project properties -->
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	<!-- <scm-url>https://github.com/luisalbertogh/sdlcworkbench.git</scm-url> -->
-	<scm-url>git@github.com:luisalbertogh/sdlcworkbench.git</scm-url>
+	<scm-url>https://github.com/luisalbertogh/sdlcworkbench.git</scm-url>
+	<!-- <scm-url>git@github.com:luisalbertogh/sdlcworkbench.git</scm-url> -->
 	<maven-repo-snapshots-url>http://localhost:9081/repository/maven-snapshots/</maven-repo-snapshots-url>
 	<maven-repo-releases-url>http://localhost:9081/repository/maven-releases/</maven-repo-releases-url>
 	
