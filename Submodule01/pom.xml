@@ -20,7 +20,7 @@
 	<!-- Project properties -->
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<!-- <scm-url>https://github.com/luisalbertogh/sdlcworkbench.git</scm-url> -->
-	<scm-url>ssh://git@github.com:luisalbertogh/sdlcworkbench.git</scm-url>
+	<scm-url>ssh://git@github.com/luisalbertogh/sdlcworkbench.git</scm-url>
 	<maven-repo-snapshots-url>http://localhost:9081/repository/maven-snapshots/</maven-repo-snapshots-url>
 	<maven-repo-releases-url>http://localhost:9081/repository/maven-releases/</maven-repo-releases-url>
 	
