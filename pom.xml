@@ -107,9 +107,6 @@
 	    <version>${maven.release.plugin.version}</version>
 	    <configuration>
 	      <releaseProfiles>release</releaseProfiles>
-	      <!-- Changes to POM will be pushed later by SCM plugin -->
-	      <pushChanges>false</pushChanges>
-	      <!-- <localCheckout>true</localCheckout> -->
 	    </configuration>
 	  </plugin>
 	  
@@ -147,7 +144,7 @@
       	<version>${maven.jacoco.plugin.version}</version>
       	<configuration>
         	<destFile>${sonar.jacoco.reportPath}</destFile>
-        	<append>true</append>
+        	<append>false</append>
     	</configuration>
       </plugin>
                
