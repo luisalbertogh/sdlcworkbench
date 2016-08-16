@@ -15,7 +15,6 @@ import net.luisalbertogh.sdlc.FooClass;
  * @author loga
  *
  */
-@RunWith(Suite.class)
 public class SdlcTest {
 
 	/**
