@@ -6,6 +6,8 @@ package net.luisalbertogh.sdlc.test;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
 
 import net.luisalbertogh.sdlc.FooClass;
 
@@ -13,6 +15,7 @@ import net.luisalbertogh.sdlc.FooClass;
  * @author loga
  *
  */
+@RunWith(Suite.class)
 public class SdlcTest {
 
 	/**
